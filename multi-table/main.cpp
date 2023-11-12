@@ -2,13 +2,17 @@
 //  main.cpp
 //  multi-table
 //
-//  Created by Chris Colpitts on 11/12/23.
+//  Prints a multiplication table
+//  Created by TxMedic436 on 11/12/23.
 //
 
 #include <iostream>
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+    for(int row = 1; row < 11; row++){
+        for(int col = 1; col < 11; col++){
+            std::cout << row * col << "\t";
+        }
+        std::cout << std::endl;
+    }
 }
